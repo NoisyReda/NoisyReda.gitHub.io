@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <title>bilancia</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        function bilancia(textBox1) {
+            if (textBox1 != "") {
+                var counter = 0, acciaio = 8000, ottone = 8700, alluminio = 7100, rame = 8900;
+                for (var i = 0; i < textBox1.length; i++)  if (parseInt(textBox1.charAt(i)) < 0 && parseInt(textBox1.charAt(i)) > 9) counter++;
+                if (counter == 0) if (document.getElementById("ac")) document.getElementById("result").innerHTML = parseInt(textBox1) * acciaio;
+                else if (document.getElementById("ot")) document.getElementById("result").innerHTML = parseInt(textBox1) * ottone;
+                else if (document.getElementById("al")) document.getElementById("result").innerHTML = parseInt(textBox1) * alluminio;
+                else if (document.getElementById("ra")) document.getElementById("result").innerHTML = parseInt(textBox1) * rame;
+            } else document.getElementById("result").innerText = "Inserisci un volume";
+        }
+    </script>
+</head>
+
+<body>
+    Volume: <input type="text" value="" id="textbl1"><br><br>
+    <select name="Materiale">
+        <option value="Acciaio" id="ac">Acciaio</option>
+        <option value="Ottone" id="ot">Ottone</option>
+        <option value="Alluminio" id="al">Alluminio</option>
+        <option value="Rame" id="ra">Rame</option>
+    </select><br><br>
+    <input type="button" value="Calcola!" name="btn"
+        onclick="bilancia(document.getElementById('textbl1').value)"><br><br>
+    Peso: <output id="result"></output>
+</body>
+
+</html>
