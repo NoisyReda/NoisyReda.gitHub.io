@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <title>BigliettoTreno</title>
+    <meta charset="UTF-8">
+    <script src="JSBiglietto.js"></script>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <p style="font-size: 40px; font-family:Georgia, 'Times New Roman', Times, serif; color: green;">BIGLIETTERIA</p>
+        Chilometri: <input type="text" value="" id="text"><br><br>
+        Classe:<br><br>
+        <input type="radio" id="radio1" name="radio" value="1°" onchange="setRad()">1°<br><br>
+        <input type="radio" id="radio2" name="radio" value="2°" onchange="setRad()">2°<br><br>
+        <select id="combo" onchange="setBiglietto()">
+            <option value="1" selected>1 persona</option>
+            <option value="2">2 persone</option>
+            <option value="3">3 persone</option>
+            <option value="4">4 persone</option>
+            <option value="5">5 persone</option>
+            <option value="6">6 persone</option>
+        </select><br><br>
+        <output id="result"></output><br><br>
+        <output id="resultP"></output>
+    </form>
+</body>
+
+</html>
