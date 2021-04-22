@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PesoForma</title>
+    <meta charset="utf-8">
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            font-size: 5;
+        }
+    </style>
+    <script src="PFJS.js"></script>
+</head>
+
+<body>
+    <h1 class="center" style="color: red;"> CALCOLO PESO FORMA </h1><br>
+    <p style="margin-left: 180px; font-size: 30px;">La tua altezza:  <input type="text" size="5px" value="" id="alt" onchange="PesoForma()"> cm<br><br>
+    Il tuo sesso: <select name="Gender" id="Gender">
+        <option value="Male">Maschio</option>
+        <option value="Female">Femmina</option>
+    </select><br><br>
+    La tua età: <input type="text" size="5px" value="" id="et" onchange="PesoForma()"> anni<br><br>
+    Il tuo peso: <input type="text" size="5px" value="" id="weight" onchange="PesoForma()"> Kg<br><br>
+    Formula di Lorenz:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PESO FORMA <output id="Lorenz">&nbsp;&nbsp;&nbsp;&nbsp;Kg</output><br><br>
+    Formula di Broca:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PESO FORMA <output id="Broca">&nbsp;&nbsp;&nbsp;&nbsp;Kg</output><br><br>
+    Formula di Wan der Vael:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PESO FORMA <output id="Wan der Vael">&nbsp;&nbsp;&nbsp;&nbsp;Kg</output><br><br>
+    Formula di BMI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PESO FORMA <output id="BMI">&nbsp;&nbsp;&nbsp;&nbsp;Kg</output><br><br>
+    </p>
+</body>
