@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Offerta Telecom</title>
+    <script src="OTJS.js"></script>
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+        }
+
+        .align {
+            text-align: left;
+            width: 70%;
+            display: block;
+            font-size: 35px;
+            color: white;
+        }
+
+        .roundRect {
+            border-radius: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            display: block;
+            font-size: 30px;
+            color: white;
+        }
+
+        .roundRectR {
+            border-radius: 25px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            width: 50%;
+            font-size: 30px;
+            color: white;
+        }
+
+        .vertical {
+            border-left: 2px solid white;
+            height: 650px;
+            position: absolute;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body onload="Load()">
+    <img src="IMG/logo-telecom-italia.png" class="center" alt="Telecom">
+    <img src="IMG/fibra_sport720x394.jpg" style="float: right; margin-left: 20px;width: 30%; border-radius: 25px;" alt="FIBBRA">
+    <div class="align">
+        Tra i prodotti TIM, l’offerta ADSL Telecom è ricca di offerte e servizi personalizzati anche per
+        le imprese. Prima di tutto offre soluzioni integrate per il tuo business, con router, switch e centralini
+        gestiti da TIM Impresa Semplice e la possibilità di utilizzare il VoIP per risparmiare sulle telefonate.Poi
+        servizi specializzati per grandi centralini o apparati di videosorveglianza. Tutto ciò, ovviamente, oltre ai
+        servizi base di linea telefonica e internet.Se vuoi passare a Telecom Italia partendo da un altro operatore
+        perchè pensi abbia offerte più convenienti, dovrai seguire una procedura molto semplice,
+        Ricordati che dovrai avere a portata di mano i tuoi dati anagrafici.
+    </div>
+    <div style="float: left;">
+        <p class="roundRect">Nome*</p>
+        <input type="text" value="Nome" style="color: lightslategray;" size="50" onfocus="this.value=''"
+            onfocusout="this.value=Name()" class="roundRect" id="name">
+        <p class="roundRect">Cognome*</p>
+        <input type="text" value="Cognome" style="color: lightslategray;" onfocus="this.value=''"
+            onfocusout="this.value=Surname()" class="roundRect" id="surname">
+        <p class="roundRect">Scadenza*</p>
+        <input type="text" value="Scadenza" style="color: lightslategray;" onfocus="this.value=''"
+            onfocusout="this.value=Elapsed()" class="roundRect" id="elapsed">
+        <p class="roundRect">Cittadinanza*</p>
+        <input type="text" value="Cittadinanza" style="color: lightslategray;" onfocus="this.value=''"
+            onfocusout="this.value=From()" class="roundRect" id="from">
+    </div>
+    <div class="vertical"></div>
+    <div style="float: right;">
+        <p class="roundRectR">Data di rilascio*</p>
+        <input type="text" value="Data emissione" style="color: lightslategray;" onfocus="this.value=''"
+            onfocusout="this.value=Released()" size="50" class="roundRectR" id="released">
+        <p class="roundRectR">Residenza*</p>
+        <select style="color: black;" class="roundRectR" id="village">
+        </select>
+        <p class="roundRectR">Colore degli occhi*</p>
+        <select style="color: black;" class="roundRectR" id="eye">
+        </select>
+        <p class="roundRectR">Sesso*</p>
+        <select class="roundRectR" style="color: black;" id="gender">
+        </select><br><br>
+        <input class="roundRectR" type="button" value="FATTO"
+            style="font-size: 40px; color: white; background-color: red; font-family:Arial, Helvetica, sans-serif;font-style: italic;"
+            onclick="Reset()">
+    </div>
+</body>
