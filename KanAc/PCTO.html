@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PCTO</title>
+    <script src="PCTO.js"></script>
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 30%;
+        }
+
+        .column {
+            margin-top: 3%;
+            float: left;
+            border-radius: 25px;
+            width: 60%;
+        }
+        .columnl {
+            margin-top: 7%;
+            float: left;
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(26, 26, 26);" onload="visibility()">
+
+    <h1 style=" background-color: rgb(36, 36, 36);  border-radius: 25px;">
+        <div style="font-family:Georgia, 'Times New Roman', Times, serif; color:orangered ;font-size: 40px;"
+            class="center">
+            Alternanza scuola lavoro
+        </div>
+    </h1>
+    <hr style="height: 1px; background-color: white;">
+    <div class="columnl" style="color: white; font-size: 20px; text-align: center; ">
+        <p>Organizzazione dei percorsi di Alternanza scuola lavoro:</p>
+    </div>
+    <div class="column"
+        style="color: white; font-size: 20px; text-align: center; background-color: rgb(36, 36, 36);">
+        <ol>
+            <li style="color: orangered; " onclick="appear(document.getElementById('dom1'),this)"> Le attività di Alternanza
+                Scuola Lavoro sono aggiuntive
+                rispetto all’orario delle lezioni?
+            </li>
+            <p style="background-color: black; margin-left: 5%; margin-right: 5%; " id="dom1">
+                Le attività di Alternanza scuola lavoro possono essere svolte all’interno del monte ore annuale
+                delle
+                lezioni o durante la sospensione delle attività didattiche, secondo il progetto formativo elaborato
+                dalla
+                singola istituzione scolastica, che avrà preliminarmente valutato la formula organizzativa più
+                adeguata per
+                venire incontro alle esigenze del territorio, dei propri allievi e della disponibilità delle
+                strutture
+                ospitanti ad accogliere gli studenti in Alternanza. A tal proposito, la Guida operativa per le
+                scuole
+                emanata da questo Ministero mette in evidenza che “sulla base del progetto, messo a punto dalla
+                scuola in
+                collaborazione con i soggetti ospitanti, l’inserimento degli alunni nei contesti operativi può
+                essere
+                organizzato, tutto o in parte, nell’ambito dell’orario annuale dei piani di studio oppure nei
+                periodi di
+                sospensione delle attività didattiche”.</p>
+            <br>
+            <li style="color: orangered;" onclick="appear(document.getElementById('dom2'),this)">
+                È prevista una personalizzazione dei progetti di Alternanza scuola lavoro che tenga conto degli
+                interessi
+                degli studenti?
+            </li>
+            <p style="background-color: black; margin-left: 5%; margin-right: 5%;" id="dom2">
+                Le indicazioni fornite alle scuole attraverso la Guida operativa del MIUR suggeriscono di evitare di
+                applicare nei progetti di Alternanza modelli standardizzati, concepiti per percorsi identici per
+                tutti,
+                bensì di adeguare i progetti alle esigenze specifiche degli studenti, che spesso esprimono bisogni
+                formativi
+                differenziati. Ciò è particolarmente rilevante nel caso delle esperienze interculturali collegate
+                alla
+                frequenza di periodi didattici in altri Paesi o ad attività sportive agonistiche che richiedono un
+                impegno
+                particolarmente oneroso. L'Alternanza entra a tutti gli effetti nel curricolo personalizzato dello
+                studente
+                e, più in generale, della scuola che, attraverso le proprie scelte e le forme di collaborazione
+                sviluppate
+                con il territorio, esprime e valorizza la propria autonomia didattica e organizzativa. Per queste
+                ragioni,
+                il progetto o i progetti di Alternanza elaborati dalla scuola sono inseriti all'interno del piano
+                dell'offerta formativa triennale, che assicura sia l'unitarietà del progetto messo a punto
+                dall'istituzione
+                scolastica, sia la specifica declinazione e attuazione a cura dei singoli Consigli di classe, che
+                dovranno
+                predisporre i singoli percorsi formativi personalizzati riservati ai propri alunni, tenuto conto
+                delle loro
+                attitudini, interessi e stili cognitivi, e, infine, valutarne gli esiti, dopo aver acquisito gli
+                elementi
+                forniti dal tutor esterno sulla base degli strumenti predisposti e condivisi.</p>
+            <br>
+            <li style="color: orangered;" onclick="appear(document.getElementById('dom3'),this)">
+                Gli studenti quindicenni possono accedere alle attività di Alternanza?
+            </li>
+            <p style="background-color: black; margin-left: 5%; margin-right: 5%;" id="dom3">
+                Sì; è previsto dall'art.1 del Decreto legislativo 15 aprile 2005, n.77, art.1, che stabilisce che
+                l'Alternanza è una modalità didattica accessibile agli studenti che hanno compiuto il quindicesimo anno
+                di età. La legge 107/2015, infatti, non ha modificato i criteri di accesso, bensì è intervenuta per
+                sistematizzare l'Alternanza all'interno dei curricoli della scuola secondaria di secondo grado con la
+                previsione di un monte ore obbligatorio da riservare a queste esperienze nel secondo biennio e
+                nell'ultimo anno: almeno 400 ore negli istituti tecnici e professionali e almeno 200 ore nei licei.</p>
+            <br>
+            <li style="color: orangered;" onclick="appear(document.getElementById('dom4'),this)">
+                Le attività di Alternanza possono essere sviluppate all'interno dell'azienda agraria annessa
+                all'istituzione scolastica?
+            </li>
+            <p style="background-color: black; margin-left: 5%; margin-right: 5%;" id="dom4">
+                L'azienda annessa all'istituto agrario offre molte opportunità formative per un apprendimento sviluppato
+                in un contesto operativo reale. Lo stesso vale per i ristoranti didattici aperti al pubblico creati da
+                alcuni istituti alberghieri. Per questa ragione, in un progetto triennale di Alternanza scuola lavoro, è
+                possibile inserire anche queste esperienze; tuttavia, per completare la formazione "sul campo" degli
+                studenti e far sviluppare una cultura d'impresa attraverso la conoscenza diretta delle realtà produttive
+                del territorio, si suggerisce di completare la formazione anche con attività svolte presso imprese
+                esterne.</p>
+            <br>
+            <li style="color: orangered;" onclick="appear(document.getElementById('dom5'),this)">
+                I corsi professionalizzanti frequentati autonomamente dagli studenti a proprie spese possono essere
+                compresi nel monte ore riservato alle esperienze di Alternanza scuola lavoro?
+            </li>
+            <p style="background-color: black; margin-left: 5%; margin-right: 5%;" id="dom5">
+                L'Alternanza, in quanto metodologia didattica, si svolge sotto la responsabilità della scuola, fa parte
+                del percorso curricolare ed è fondata su alcuni elementi specifici che la distinguono da altre
+                esperienze formative, pur validissime, organizzate dalla scuola o praticate autonomamente dagli allievi.
+                L'Alternanza scuola lavoro, tra l'altro, prevede una convenzione tra scuola e struttura ospitante che,
+                in relazione al progetto formativo condiviso, regola i rapporti e le responsabilità dei diversi soggetti
+                coinvolti, compresi gli aspetti relativi alla tutela della salute e della sicurezza nei luoghi di lavoro
+                da parte dei partecipanti. La convenzione, inoltre, indica le figure tutoriali che accompagnano il
+                percorso formativo dello studente, la durata delle esperienze e la loro scansione temporale, le attività
+                che il giovane dovrà svolgere all'interno della struttura ospitante, coerenti con gli obiettivi del
+                progetto formativo condiviso con la scuola e con i risultati di apprendimento previsti dal profilo
+                educativo dell'indirizzo di studi.</p>
+        </ol>
+    </div>
+</body>
