@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>QUIZ</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script src="Quiz.js"></script>
+</head>
+
+<body onload="load()">
+    Dati anagrafici:<br><br>
+    Cognome: <input type="text" style="border-color: white;" id="cognome"> &nbsp;&nbsp;Nome<input type="text"
+        style="border-color: white;" id="nome"><br><br><br><br>
+    Data di nascita:<br><br>
+    Giorno<input type="text" style="border-color: white;" id="nascita"> &nbsp;&nbsp; Mese <select id="comboM">
+        <option id="MES" value="GEN">GEN</option>
+        <option id="MES" value="FEB">FEB</option>
+        <option id="MES" value="MAR">MAR</option>
+        <option id="MES" value="APR">APR</option>
+        <option id="MES" value="MAG">MAG</option>
+        <option id="MES" value="GIU">GIU</option>
+        <option id="MES" value="LUG">LUG</option>
+        <option id="MES" value="AGO">AGO</option>
+        <option id="MES" value="SET">SET</option>
+        <option id="MES" value="OTT">OTT</option>
+        <option id="MES" value="NOV">NOV</option>
+        <option id="MES" value="DIC">DIC</option>
+    </select>
+    Anno:<input type="text" style="border-color: white;" id="year"><br><br>
+    <fieldset style="border-color: white">
+        <legend>Domande</legend>
+        Qual'è il linguaggio di programmazione utilizzato per creare e modificare i database? (in maiuscolo!!)<br><br>
+        <input type="text" style="border-color: white;" id="ris1"><br><br>
+        Quanti valori può assumere una variabile booleana?<br><br>
+        <select id="booleana">
+            <option id="1">1</option>
+            <option id="2">2</option>
+            <option id="3">4</option>
+            <option id="4">256</option>
+        </select><br><br>
+        Quali sono le librerie caricate a run-time?<br><br>
+        <input type="radio" name="rad" id="stat">Statiche<br>
+        <input type="radio" name="rad" id="dim">Dinamiche<br><br>
+        Quali tra queste sono parole chiave in C++?<br><br>
+        <input type="checkbox" id="void">void<br><br>
+        <input type="checkbox" id="integer">integer<br><br>
+        <input type="checkbox" id="char">char<br><br>
+        8 bit corrispondono ad un...<br><br>
+        <input type="text" id="byte" style="border-color: white;">
+    </fieldset>
+    <input type="button" style="background-color: gray;color: white;" value="Elabora" onclick="buttonLoad()"> <input
+        type="button" style="background-color: gray;color: white;" value="Cancella" onclick="deleteAll()"><br><br>
+    <fieldset style="border-color: white; width: 50%">
+        <legend>Esito</legend>
+        Punteggio: <input type="text" readonly id="score" style="border-color: white;">
+    </fieldset>
+    <input type="text" readonly style="border-color: white; " id="ut" value="Utente con punteggio: ">
+    <input type="text" readonly style="border-color: white;" id="puntUt" value="">
+</body>
