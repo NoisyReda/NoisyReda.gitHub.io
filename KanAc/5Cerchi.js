@@ -1,0 +1,34 @@
+function creaFigura() {
+    var mioCanvas = document.getElementById("canvas1");
+    var ctx = mioCanvas.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(200, 200, 100, 0, 2 * Math.PI, true);
+    ctx.lineWidth = 15;
+    ctx.strokeStyle = "rgba(0,0,255,1)";
+    ctx.stroke();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.arc(440, 200, 100, 0, 2 * Math.PI, true);
+    ctx.lineWidth = 15;
+    ctx.strokeStyle = "rgba(0,0,0,1)";
+    ctx.stroke();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.arc(680, 200, 100, 0, 2 * Math.PI, true);
+    ctx.lineWidth = 15;
+    ctx.strokeStyle = "rgba(255,0,0,1)";
+    ctx.stroke();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.arc(320, 300, 100, 0, 2 * Math.PI, true);
+    ctx.lineWidth = 15;
+    ctx.strokeStyle = "rgba(252, 177, 49,1)";
+    ctx.stroke();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.arc(560, 300, 100, 0, 2 * Math.PI, true);
+    ctx.lineWidth = 15;
+    ctx.strokeStyle = "rgba(0, 166, 81,1)";
+    ctx.stroke();
+    ctx.closePath();
+}
