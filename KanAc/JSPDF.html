@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Prova PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="JSPDF"></script>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Creare un PDF con JavaScript</h1>
+    <p>Inserisci il nome <input type="text" id="nome"></p>
+    <p>Inserisci il cognome <input type="text" id="cognome"></p>
+    <p>Inserisci il numero di telefono <input type="text" id="cell"></p>
+    <p>Inserisci l'email <input type="text" id="email"></p>
+    <p>Inserisci un messaggio</p><input type="text" id="messaggio" style="height:300px;width: 500px">
+    <p>Crea il PDF <input type="button" value="Crea PDF" onclick="crea()"></p>
+
+</body>
