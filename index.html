@@ -2,40 +2,39 @@
 
 <head>
     <title>index</title>
+    <link rel="stylesheet" href="Style.css">
     <style>
-        td,
-        th {
-            border: 1px solid #dddddd;
-            padding: 8px;
+        @keyframes scaleInverse {
+            from {
+                transform: scale(6);
+            }
+
+            to {
+                transform: scale(1.0);
+            }
         }
 
-        table {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            border-collapse: collapse;
-            width: 40%;
-            border-radius: 1em;
-            overflow: hidden;
-            margin-left: auto;
-            margin-right: auto;
-            overflow-wrap: inherit;
-            table-layout: fixed;
-        }
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
 
-        .link {
-            color: white;
-            text-decoration: none;
-        }
-
-        body {
-            background-color: rgb(31, 31, 31);
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 
 <body>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>      
     <div>
         <h1
-            style="font-size: 60px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: white; white-space:nowrap; text-align: center;">
+            style="font-size: 60px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: white; white-space:nowrap; text-align: center; animation: scaleInverse 1s;">
             I MIEI ESERCIZI</h1>
         <table style="color: white">
             <tr style="background-color: fuchsia;">
@@ -84,7 +83,8 @@
                         target="_blank" href="https://NoisyReda.gitHub.io/KanAc/PCTO.html">VAI AL SITO!</a></td>
             </tr>
         </table>
-        <hr size="6" style="border-radius: 25px; background-color: white; border-color: rgb(31, 31, 31); width: 21%;">
+        <hr size="6"
+            style="animation: fadein 3s;border-radius: 25px; background-color: white; border-color: rgb(31, 31, 31); width: 21%;">
         <table style="color: white">
             <tr style="background-color: fuchsia;">
                 <td style="text-align: center; border-right: none; padding-left: 5%;border-color: fuchsia;">ESERCIZI DI
