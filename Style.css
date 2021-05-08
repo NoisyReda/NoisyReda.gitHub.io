@@ -2,6 +2,8 @@
         th {
             border: 1px solid #dddddd;
             padding: 8px;
+            z-index: 1;
+            position:relative;
         }
 
         table {
@@ -46,9 +48,9 @@ body {
   background:rgb(31, 31, 31);
   color: #000;
   line-height: 1.6;
-  position: absolute;
   font-family: sans-serif;
-  overflow: hidden;
+  position: absolute;
+  z-index: 0;
 }
 
 .lines {
