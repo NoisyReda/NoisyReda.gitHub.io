@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 35%;
+        }
+
+        th,
+        tr {
+            border: 1px solid white;
+            padding-right: 20px;
+            padding-left: 20px;
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(31, 31, 31);">
+    <h1 style="text-align: center; color: red;">Lettura file Tabacchi 24H</h1>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color: white;">Lettura giornaliera di un dispenser
+        automatico di tabacchi</h2>;
+    <input type="file" id="file-input">
+    <h3 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;">Contenuto del file:</h3>
+    <table class="center" id="tab">
+        <tr>
+            <th>Nome Sigarette</th>
+            <th>Posizione nel distributore</th>
+            <th>Quantita'</th>
+            <th>Data</th>
+            <th>Orario</th>
+        </tr>
+    </table>
+    <div id="cont" class="center">
+
+    </div>
+
+    <script type="text/javascript">
+        function readSingleFile(e) {
+            var contents = "";
+            var file = e.target.files[0];
+            if (!file) {
+                return;
+            }
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var contents = e.target.result;
+                elaboraContents(contents);
+            };
+            reader.readAsText(file);
+        }
+
+        // funzione che riceve una stringa e che visualizza nel tag 'file-content'
+        // il numero di linee e tutto il contenuto della stringa
+        function elaboraContents(contents) {
+            var element = document.getElementById('file-content');
+            var lines = contents.split("\n");
+            let line;
+            var data = new Array();
+            let elements;
+            let t = document.getElementById("tab");
+            let row = t.insertRow(1);
+            for (let i = 0; i < lines.length; i++) {
+                line = lines[i];
+                elements = line.split(";");
+                row = t.insertRow(i + 1);
+                row.style.border = "1px thick solid white";
+                let nomeT = row.insertCell(0);
+                let Pos = row.insertCell(1);
+                let qua = row.insertCell(2);
+                let date = row.insertCell(3);
+                let hour = row.insertCell(4);
+                nomeT.innerHTML = elements[0];
+                nomeT.style.textAlign = "center";
+                nomeT.style.border = "1px solid white";
+                Pos.innerHTML = elements[1];
+                Pos.style.textAlign = "center";
+                Pos.style.border = "1px solid white";
+                qua.innerHTML = elements[2];
+                qua.style.textAlign = "center";
+                qua.style.border = "1px solid white";
+                date.innerHTML = elements[3];
+                date.style.textAlign = "center";
+                date.style.paddingLeft = "10px"
+                date.style.paddingRight = "10px"
+                date.style.border = "1px solid white";
+                hour.innerHTML = elements[4];
+                hour.style.textAlign = "center";
+                hour.style.border = "1px solid white";
+            }
+        }
+
+        // associazione all'evento "onChange" dell'elemento 'file-input' della funzione readSingleFile()
+        document.getElementById('file-input')
+            .addEventListener('change', readSingleFile, false);
+    </script>
+</body>
+
+</html>

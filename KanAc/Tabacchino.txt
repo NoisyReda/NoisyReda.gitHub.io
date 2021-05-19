@@ -1,0 +1,8 @@
+winston blu;primo ripiano;20;20/05/2012;16:03
+winston blu;primo ripiano;19;20/05/2012;16:09
+winston blu;primo ripiano;18;20/05/2012;16:29
+winston blu;primo ripiano;16;20/05/2012;16:40
+winston blu;primo ripiano;20;20/05/2012;16:03
+winston blu;primo ripiano;19;20/05/2012;16:09
+winston blu;primo ripiano;18;20/05/2012;16:29
+winston blu;primo ripiano;16;20/05/2012;16:41
